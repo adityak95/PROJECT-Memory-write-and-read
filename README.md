@@ -43,4 +43,16 @@ we made 2 backdoor task
 for this wr use 2 system task function
 for write -$readmemh("file_name",dut,start_address,end_address)
 for read -$writememh("file_name",dut,start_address,end_address)
-Here ends the programm
+to check the program we generated the testcases
+The testbench supports the following test cases:
+1.Full_fw_fr: Full write and read using the frontdoor
+2.Half_fw_fr: Half write and read using the frontdoor
+3.Quater_fw_fr: Quarter write and read using the frontdoor
+4.Concurrent_fw_fr: Concurrent write and read using the frontdoor
+5.fw_br: Write using the frontdoor and read using the backdoor
+6.Half_fw_br: Half write using the frontdoor and read using the backdoor
+7.Quater_fw_br: Quarter write using the frontdoor and read using the backdoor
+8.Concurrent_fw_br: Concurrent write using the frontdoor and read using the backdoor
+9.bw_fr: Write using the backdoor and read using the frontdoor
+10.Half_bw_fr: Half write using
+when the reset =0 we will pass the testcase while run time of the program
